@@ -37,15 +37,17 @@ Sorumlu alan:
 - Veri setinin yapisi
 - Sinif dagilimi
 - Eksik veri kontrolu
-- Standardization ve train/validation/test split
+- Standardization (**Z-Score Normalization**)
+- Neden scaling gerekli? (Sayısal kanıtlar: 0.0017 vs 2501.0)
+- Train/validation/test split (**Stratified Split** mantığı)
 
 Sunumda anlatacagi ana fikir:
 - Bu proje hangi problemi cozuyor ve neden bu veri seti secildi?
 
 Sunumda gosterecegi seyler:
-- Veri seti ozeti
-- Sinif dagilimi
-- Temel preprocessing adimlari
+- Veri seti özeti ve eksik veri kontrolü
+- Sınıf dağılımı ve ölçek farkları
+- Temel preprocessing (Standardizasyon)
 
 Teknik katkisi:
 - `step1_data_understanding.ipynb`
@@ -59,17 +61,17 @@ Neden adil bir alan:
 Sorumlu alan:
 - `Logistic Regression (W2 P2)`
 - Neden linear regression kullanilmadigi
-- Neden logistic regression'in dogru baseline oldugu
-- Model egitimi ve temel metrikler
+- Neden logistic regression'in dogru baseline oldugu (**Lineer Ayrılabilirlik İspatı**)
+- Model egitimi ve temel metrikler (Accuracy, F1, Precision, Recall)
 - Confusion matrix yorumu
 
 Sunumda anlatacagi ana fikir:
 - Bu veri setinde neden once logistic regression ile basliyoruz?
 
 Sunumda gosterecegi seyler:
-- Baseline metrikleri
+- Baseline metrikleri ve **Linear Separability Scatter Plot**
 - Confusion matrix
-- Kisa model mantigi
+- Kisa model mantigi (Sigmoid/BCE)
 
 Teknik katkisi:
 - `step2_logistic_regression.ipynb`
@@ -108,7 +110,8 @@ Sorumlu alan:
 - `MLP + Dropout (W4 P4)`
 - `MLP + Early Stopping (W4 P5)`
 - Istege bagli olarak `MLP + Batch Normalization (W4 P7)`
-- Hangi teknik neyi iyilestirdi
+- Hangi teknik neyi iyilestirdi (L2, Dropout, Early Stopping farkları)
+- Overfitting'in grafiklerle ispatı
 
 Sunumda anlatacagi ana fikir:
 - Overfitting sorununu nasil kontrol altina aldik?

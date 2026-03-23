@@ -18,10 +18,10 @@ Hocanin mesajlarina gore proje su dort alanda guclu olmak zorunda:
 4. Technical depth of methods
 
 Bu nedenle roadmap boyunca her adimda su mantik korunacak:
-- Kod calisir durumda olacak
-- Week 2, Week 3 ve Week 4 baglantilari acik sekilde gosterilecek
-- En az 5 ana model ayni veri seti uzerinde karsilastirilacak
-- Sonuclar sadece skor olarak degil, teknik yorumla birlikte sunulacak
+- "Gercek hayat" (real-world) senaryolarindan uzak durulup, tamamen matematige ve metodolojik titizlige (Methodological Rigor) odaklanilacak.
+- Kod calisir durumda olacak, Week 2, 3 ve 4 baglantilari acik sekilde gosterilecek.
+- En az 5 ana model ayni veri seti uzerinde karsilastirilacak.
+- Sonuclar sadece skor olarak degil, teknik jargon (Gradient, L2, Overfitting vb.) ile sunulacak.
 
 ## Proje Kapsami
 Veri seti:
@@ -80,7 +80,7 @@ Yapilacaklar:
 - Eksik veri kontrolu yap
 - Temel istatistikleri incele
 - Gerekirse basit grafiklerle veri yapisini goster
-- Standardizasyon uygula
+- **KRITIK YASA (Data Leakage):** Standardizasyon uygularken `StandardScaler.fit_transform()` SADECE Train setine uygulanacak. Validation ve Test setlerine sadece `.transform()` yapilacak.
 - Train/validation/test ayrimini yap
 - Mumkunse `stratified split` kullan
 
@@ -112,8 +112,10 @@ Yapilacaklar:
 - Sonuclari tabloya kaydet
 - Bu modelin neden secildigini yaz
 
-Mutlaka cevaplanacak soru:
+Mutlaka cevaplanacak sorular:
 - Neden bu veri seti icin ilk tercih logistic regression oldu?
+- Hedef kanser teshisi oldugundan verideki sinif dengesizligi (%63 Benign) referans alinarak; Naif Baseline olan %63 "kor tahmin" basarisi asildi mi?
+- Model performansi Neden sadece Accuracy ile degil, **Recall ve F1-Score** ile olculmelidir?
 
 Beklenen ciktIlar:
 - Accuracy, precision, recall, F1-score
@@ -205,8 +207,9 @@ Amac:
 
 Yapilacaklar:
 - Tum model sonuclarini tek tabloda topla
-- Gerekli grafik ve confusion matrix ozetlerini sec
-- En iyi modeli sadece skorla degil yorumla belirle
+- Guzel grafik ve confusion matrix ozetlerini sec
+- **BONUS PUAN FIRSATI:** Hoca tarafindan henuz islenmemis ama projeyi asiri profesyonel gosterecek olan **ROC Curve ve AUC (Area Under Curve)** analizini modellere entegre et.
+- En iyi modeli sadece skorla degil yorumla (F1/Recall) belirle
 - "daha karmasik model gerekli mi?" sorusunu cevapla
 - Final teknik sonuc yazisini hazirla
 
@@ -266,15 +269,15 @@ Slayt akisi:
 9. Final karsilastirma tablosu
 10. Teknik yorumlar ve sonuc
 
-Sunumda dikkat edilecekler:
-- Skor okumak yerine teknik yorum yapin
-- Her modelin neden secildigini bir cumlede anlatin
-- Grafik ve tablolar temiz olsun
-- Ezberden okuma yapmayin
-- Sunum akisi hizli ama anlasilir olsun
+Sunumda dikkat edilecek SIFIR TOLERANS KURALLARI:
+- **JARGON ZORUNLULUGU:** Skor okumak yerine "Weight penalty, Gradient saturation, Linear Separability" gibi metodolojik teknik yorum yapilacak.
+- Her modelin neden secildigini bir cumlede anlatin.
+- Grafik ve tablolar temiz olsun.
+- **SIFIR NOKTASI (0 PUAN UYARISI):** Hocanin uyarisi nettir: "if you read from somewhere, you will get 0". Slaytlarda yazi minimumda tutulacak ve ASLA ekrandan yazi okunmayacaktir.
+- Sunum akisi hizli ve metodolojiye dayali (real-world degil) olacaktir.
 
 Tam puan gerekcesi:
-- Hoca sunumda teknik jargon, derinlik, tempo ve akiciliga bakiyor
+- Hoca sunumda teknik jargon kullanimina (%40) ve kagitlara/ekrana bakmadan dogal anlatima (%30) bakiyor. Oran cok buyuk!
 
 ## Kalite Kontrol Listesi
 Teslimden once su maddeler tek tek kontrol edilecek:
