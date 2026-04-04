@@ -1,0 +1,4 @@
+split,samples,positive_ratio
+train,341,0.6275659824046921
+validation,114,0.6228070175438597
+test,114,0.631578947368421
