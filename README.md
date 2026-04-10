@@ -58,9 +58,9 @@ Clinical priority: **Maximizing Recall** (minimizing missed tumors).
 ## 🛠 Repository Structure
 
 *   `notebooks/`: Sequential pipeline steps (1-6).
-*   `data_utils.py`: Reusable logic for stratified splits and scaling.
+*   `src/`: Core source code (data utilities and configs).
 *   `outputs/`: High-resolution figures and CSV metrics.
-*   `models/`: (Optional) Saved state dictionaries.
+*   `responsibilities/`: Team member roles and contribution reports.
 
 ## 📦 Requirements
 
