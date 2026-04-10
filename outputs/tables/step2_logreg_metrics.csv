@@ -1,0 +1,2 @@
+Model,Split,Accuracy,Precision (Macro),Recall (Macro),F1-Score (Macro)
+Logistic Regression (Baseline),Validation,0.9649122807017544,0.9672569328433009,0.9580740255486406,0.9623015873015872

@@ -1,0 +1,11 @@
+Label,Accuracy,Precision,Recall,F1-Score
+[Optimizer] Adam (lr=0.001),96.49,96.73,95.81,96.23
+[Optimizer] SGD + Momentum (α=0.9),96.49,96.73,95.81,96.23
+[Optimizer] Adam + Cosine Annealing,96.49,96.73,95.81,96.23
+[Init] He/Kaiming  (ReLU-correct),96.49,96.73,95.81,96.23
+[Init] Xavier/Glorot (tanh-correct),96.49,96.73,95.81,96.23
+[Init] Small Random  (σ=0.01),62.28,31.14,50.0,38.38
+[Init] Large Random  (σ=1.0),95.61,95.54,95.1,95.31
+[Schedule] Constant LR,96.49,96.73,95.81,96.23
+"[Schedule] Step Decay (γ=0.5, s=30)",97.37,97.97,96.51,97.16
+[Schedule] Cosine Annealing,96.49,96.73,95.81,96.23

@@ -1,0 +1,6 @@
+feature,train_mean_after_scaling,train_std_after_scaling
+mean radius,6.511571991936402e-17,1.0
+mean texture,1.0418515187098243e-17,1.0
+mean perimeter,1.1460366705808067e-16,1.0
+mean area,1.7451012938389557e-16,1.0
+mean smoothness,1.4468712966082686e-15,1.0

@@ -1,0 +1,4 @@
+Label,Accuracy,Precision,Recall,F1-Score
+Adam (lr=0.001),96.49,96.73,95.81,96.23
+SGD + Momentum (α=0.9),96.49,96.73,95.81,96.23
+Adam + Cosine Annealing,96.49,96.73,95.81,96.23

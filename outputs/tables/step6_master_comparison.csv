@@ -1,0 +1,15 @@
+Model,Group,Split,Accuracy,Precision,Recall,F1-Score
+Logistic Regression (Baseline),Week 2,Validation,0.9649122807017544,0.9672569328433008,0.9580740255486406,0.9623015873015872
+Plain MLP (Baseline NN),Week 3,Validation,0.9736842105263158,0.9701298701298702,0.9742875859810024,0.9721203228173148
+MLP + L2 Regularization,Week 4,Validation,0.9649122807017544,0.9672569328433008,0.9580740255486406,0.9623015873015872
+MLP + Early Stopping,Week 4,Validation,0.9824561403508772,0.981329839502129,0.981329839502129,0.981329839502129
+Adam (lr=0.001),Week 5 - Optimizer,Validation,0.9649,0.9673,0.9581000000000001,0.9623
+SGD + Momentum (α=0.9),Week 5 - Optimizer,Validation,0.9649,0.9673,0.9581000000000001,0.9623
+Adam + Cosine Annealing,Week 5 - Optimizer,Validation,0.9649,0.9673,0.9581000000000001,0.9623
+He/Kaiming  (ReLU-correct),Week 5 - Initialization,Validation,0.9649,0.9673,0.9581000000000001,0.9623
+Xavier/Glorot (tanh-correct),Week 5 - Initialization,Validation,0.9649,0.9673,0.9581000000000001,0.9623
+Small Random  (σ=0.01),Week 5 - Initialization,Validation,0.6228,0.3114,0.5,0.38380000000000003
+Large Random  (σ=1.0),Week 5 - Initialization,Validation,0.9561,0.9554,0.951,0.9531000000000001
+Constant LR,Week 5 - LR Schedule,Validation,0.9649,0.9673,0.9581000000000001,0.9623
+"Step Decay (γ=0.5, s=30)",Week 5 - LR Schedule,Validation,0.9737,0.9797,0.9651000000000001,0.9716
+Cosine Annealing,Week 5 - LR Schedule,Validation,0.9649,0.9673,0.9581000000000001,0.9623
